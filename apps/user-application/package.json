@@ -10,6 +10,7 @@
     "cf-typegen": "wrangler types --env-interface Env"
   },
   "dependencies": {
+    "@anthropic-ai/sdk": "^0.65.0",
     "@polar-sh/sdk": "^0.34.13",
     "@polar-sh/tanstack-start": "^0.1.5",
     "@radix-ui/react-avatar": "^1.1.10",

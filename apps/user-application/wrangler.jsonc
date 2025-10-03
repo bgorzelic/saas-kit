@@ -7,4 +7,10 @@
   "vars": {
     "MY_VAR": "Hello from Cloudflare",
   },
+  // For local development, create a .dev.vars file with:
+  // ANTHROPIC_API_KEY=sk-ant-your-key
+  // POLAR_SECRET=your-polar-secret
+  // DATABASE_HOST=your-host
+  // DATABASE_USERNAME=your-username
+  // DATABASE_PASSWORD=your-password
 }

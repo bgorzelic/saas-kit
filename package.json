@@ -1,8 +1,26 @@
 {
   "name": "saas-kit",
   "version": "1.0.0",
-  "description": "",
+  "description": "A modern SaaS template with TanStack Start, Cloudflare Workers, and Anthropic AI",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bgorzelic/saas-kit.git"
+  },
+  "template": {
+    "features": [
+      "TanStack Start",
+      "Cloudflare Workers",
+      "Better Auth",
+      "Anthropic AI",
+      "Drizzle ORM",
+      "Tailwind CSS v4",
+      "Shadcn/UI"
+    ],
+    "customizable": true,
+    "initScript": "./scripts/init-template.sh"
+  },
   "scripts": {
+    "init": "bash ./scripts/init-template.sh",
     "setup": "pnpm i && pnpm run build:data-ops",
     "build:data-ops": "pnpm run --filter data-ops build",
     "dev:user-application": "pnpm run --filter user-application dev",

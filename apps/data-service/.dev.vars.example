@@ -1,0 +1,10 @@
+# Copy this file to .dev.vars for local development
+# .dev.vars is gitignored and will not be committed
+
+# Anthropic API Key (Required for AI agent features)
+ANTHROPIC_API_KEY=sk-ant-your-api-key-here
+
+# Database Configuration (Required)
+DATABASE_HOST=your-database-host.com
+DATABASE_USERNAME=your-username
+DATABASE_PASSWORD=your-password
