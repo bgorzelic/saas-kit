@@ -7,6 +7,9 @@
     "build": "vite build",
     "deploy": "pnpm run build && wrangler deploy",
     "serve": "vite preview",
+    "test": "vitest",
+    "test:ui": "vitest --ui",
+    "test:coverage": "vitest run --coverage",
     "cf-typegen": "wrangler types --env-interface Env"
   },
   "dependencies": {
@@ -22,8 +25,8 @@
     "@repo/data-ops": "workspace:^",
     "@tailwindcss/typography": "^0.5.19",
     "@tailwindcss/vite": "^4.0.6",
-    "@tanstack/react-query": "^5.66.0",
-    "@tanstack/react-query-devtools": "^5.66.0",
+    "@tanstack/react-query": "^5.90.2",
+    "@tanstack/react-query-devtools": "^5.90.2",
     "@tanstack/react-router": "^1.132.7",
     "@tanstack/react-router-devtools": "^1.132.7",
     "@tanstack/react-router-ssr-query": "^1.132.7",
@@ -54,9 +57,10 @@
     "@types/react-dom": "^19.0.3",
     "@types/remark-prism": "^1.3.7",
     "@vitejs/plugin-react": "^4.3.4",
+    "@vitest/coverage-v8": "^3.2.4",
     "jsdom": "^26.0.0",
     "typescript": "^5.7.2",
-    "vite": "7.1.2",
+    "vite": "7.1.9",
     "vitest": "^3.0.5",
     "web-vitals": "^4.2.4",
     "wrangler": "^4.39.0"
