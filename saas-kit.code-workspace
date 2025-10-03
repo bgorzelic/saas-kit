@@ -1,8 +1,39 @@
 {
 	"folders": [
 		{
-			"path": ".."
+			"name": "SaaS Kit",
+			"path": "."
 		}
 	],
-	"settings": {}
+	"settings": {
+		"files.exclude": {
+			"**/node_modules": true,
+			"**/.git": false,
+			"**/dist": true,
+			"**/.wrangler": true,
+			"**/.svelte-kit": true
+		},
+		"search.exclude": {
+			"**/node_modules": true,
+			"**/dist": true,
+			"**/pnpm-lock.yaml": true,
+			"**/.wrangler": true
+		},
+		"editor.defaultFormatter": "esbenp.prettier-vscode",
+		"editor.formatOnSave": true,
+		"editor.codeActionsOnSave": {
+			"source.fixAll.eslint": "explicit"
+		},
+		"typescript.tsdk": "node_modules/typescript/lib",
+		"svelte.enable-ts-plugin": true
+	},
+	"extensions": {
+		"recommendations": [
+			"svelte.svelte-vscode",
+			"dbaeumer.vscode-eslint",
+			"esbenp.prettier-vscode",
+			"bradlc.vscode-tailwindcss",
+			"Anthropic.claude-code"
+		]
+	}
 }
